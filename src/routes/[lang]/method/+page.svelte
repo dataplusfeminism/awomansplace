@@ -3,11 +3,10 @@
 </script>
 
 <svelte:head>
-    <title>Chapter 3 - What is our vision of a safe city?</title>
-    <meta
-        name="Chapter 3 -Turning our vision of a safe city into reality
-"
-        content="A woman's place is in a safe city"
+	<title>$t("method.title")}</title>
+	<meta
+		name={$t("method.title")}
+        content={$t("method.page_title")}
     />
 </svelte:head>
 

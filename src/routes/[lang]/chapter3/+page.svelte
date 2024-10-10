@@ -10,11 +10,10 @@
 </script>
 
 <svelte:head>
-	<title>Chapter 3 - What is our vision of a safe city?</title>
+	<title>{$t("chapter3.chapter_no") + " " + $t("chapter3.chapter_title")}</title>
 	<meta
-		name="Chapter 3 -Turning our vision of a safe city into reality
-"
-		content="A woman's place is in a safe city"
+		name={$t("chapter3.chapter_no") + " " + $t("chapter3.chapter_title")}
+		content={$t("chapter3.title")}
 	/>
 </svelte:head>
 
@@ -34,6 +33,10 @@
 		<p class="text-para">
 			{@html $t("chapter3.para_2")}
 		</p>
+
+		<div class='text-center my-4'><span class='text-center width-auto py-2 px-3 text-md border-2 border-yellow-100 bg-yellow-500 text-white rounded-xl'>
+			{$t("chapter3.instruct")}
+		</span></div>
 
 		<div class="pb-8">
 			<div class="border-image">
@@ -388,11 +391,11 @@
 						</td>
 					</tr>
 					<tr>
-						<td><img src="/logos/logo-rdf.webp" /></td>
+						<td><img src="/logos/logo-rdf.webp"/></td>
 						<td>{@html $t("chapter3.text_rdf")}</td>
 					</tr>
 					<tr>
-						<td class="text-center"
+						<td
 							><span
 								class="font-bold text-xl"
 								style="font-family: 'Laila';"
@@ -422,7 +425,7 @@
 		>
 			<tbody>
 				<tr>
-					<td><img src="/logos/logo-sappho.jpeg" /></td>
+					<td><img class='min-w-40' src="/logos/logo-sappho.jpeg" /></td>
 					<td>{@html $t("chapter3.text_sap")} </td>
 				</tr>
 				<tr>
@@ -503,7 +506,7 @@
 	h4 {
 		font-style: normal;
 		font-weight: 600;
-		font-size: 20px;
+		font-size: 24px;
 	}
 
 	.yellow {

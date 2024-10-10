@@ -6,7 +6,7 @@
 	<title>{$t("home.chapterno") + " " + $t("home.chapter_subtitle")}</title>
 	<meta
 		name={$t("home.chapterno") + " " + $t("home.chapter_subtitle")}
-		content="A woman's place is in a safe city"
+		content={$t("home.title")}
 	/>
 </svelte:head>
 
@@ -139,15 +139,17 @@
 		<p class="text-para">
 			{@html $t("home.para_10")}
 		</p>
-
-		<a href={`../${$locale}/chapter2`}
-			><h3 class="py-8 bold">
-				{@html $t("home.go_to")}
-				<span class="yellow font-bold"
-					>{@html $t("home.chapter_no")}
-				</span>
-			</h3>
-		</a>
+		
+		<div class='text-right'>
+			<a href={`../${$locale}/chapter2`}
+				><h3 class="py-8 bold">
+					{@html $t("home.go_to")}
+					<span class="yellow font-bold"
+						>{@html $t("home.chapter_no")}
+					</span>
+				</h3>
+			</a>
+		</div>
 	</div>
 </section>
 

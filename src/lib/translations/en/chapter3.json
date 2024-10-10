@@ -96,5 +96,7 @@
     "go_back": "← ",
     "back_chapter": "Chapter 2",
     "go_to": "→",
-    "to_chapter": "Methodology"
+    "to_chapter": "Methodology",
+    "instruct": "Click on each section to read more",
+    "title": "A woman's place is in a safe city"
 }
