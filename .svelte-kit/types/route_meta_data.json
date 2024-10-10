@@ -1,0 +1,28 @@
+{
+	"/": [
+		"src/routes/+layout.js",
+		"src/routes/+layout.server.js"
+	],
+	"/[lang]": [
+		"src/routes/+layout.js",
+		"src/routes/+layout.server.js",
+		"src/routes/+layout.js",
+		"src/routes/+layout.server.js"
+	],
+	"/[lang]/about": [
+		"src/routes/+layout.js",
+		"src/routes/+layout.server.js"
+	],
+	"/[lang]/chapter2": [
+		"src/routes/+layout.js",
+		"src/routes/+layout.server.js"
+	],
+	"/[lang]/chapter3": [
+		"src/routes/+layout.js",
+		"src/routes/+layout.server.js"
+	],
+	"/[lang]/method": [
+		"src/routes/+layout.js",
+		"src/routes/+layout.server.js"
+	]
+}
