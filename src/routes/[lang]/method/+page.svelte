@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>$t("method.title")}</title>
+	<title>{$t("method.title")}</title>
 	<meta
 		name={$t("method.title")}
         content={$t("method.page_title")}
@@ -74,10 +74,10 @@
                 {@html $t("method.para_8")}
             </p>
 
-            <div class="flex flex-row items-center space-x-12 mt-10">
-                <img class="w-auto h-48" src="/logos/logo-lcau.png" />
-                <img class="w-auto h-48" src="/logos/logo-duspmit.png" />
-                <img class="w-auto h-48" src="/logos/logo-df-pink.png" />
+            <div class="flex flex-wrap items-center gap-x-8">
+                <img class="w-auto h-48 my-10" src="/logos/logo-lcau.png" />
+                <img class="w-auto h-48 my-10" src="/logos/logo-duspmit.png" />
+                <img class="w-auto h-48 my-10" src="/logos/logo-df-pink.png" />
             </div>
         </div>
 
