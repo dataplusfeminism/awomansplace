@@ -383,15 +383,15 @@
 			>
 				<tbody>
 					<tr>
-						<td>
-							<img class="min-w-40" src="/logos/logo-pov.png" />
+						<td class='w-4/12'>
+							<img src="/logos/logo-pov.png" />
 						</td>
 						<td>
 							{@html $t("chapter3.text_pov")}
 						</td>
 					</tr>
 					<tr>
-						<td><img src="/logos/logo-rdf.webp"/></td>
+						<td><img src="/logos/logo-rdf.png"/></td>
 						<td>{@html $t("chapter3.text_rdf")}</td>
 					</tr>
 					<tr>
@@ -420,12 +420,26 @@
 
 		<!-- Kolkata orgs-->
 		<h4>{$t("chapter3.kolkata_org")}</h4>
+		<!-- <div class='flex-col border-separate border-spacing-4 border border-pink-500 px-4 py-4'>
+			<div class='flex flex-wrap pa-4'>
+				<div class=''><img class='max-w-40' src="/logos/logo-sappho.jpeg" /></div>
+				<div class=''>{@html $t("chapter3.text_sap")}</div>
+			</div>
+			<div class='flex flex-wrap pa-4'>
+				<div class='w-1/2 sm: w-full'><img src="/logos/logo-swayam.png" /></div>
+				<div class='w-1/2'>{@html $t("chapter3.text_swa")}</div>
+			</div>
+			<div class='flex flex-wrap pa-4'>
+				<div class='w-1/2 sm: w-full'><img src="/logos/logo-anandam.jpeg" /></div>
+				<div class='w-1/2 sm: w-full'>{@html $t("chapter3.text_ana")}</div>
+			</div>
+		</div> -->
 		<table
 			class="table-fixed width-fixed border-separate border-spacing-4 border border-pink-500"
 		>
 			<tbody>
 				<tr>
-					<td><img class='min-w-40' src="/logos/logo-sappho.jpeg" /></td>
+					<td td class='w-4/12'><img src="/logos/logo-sappho.jpeg" /></td>
 					<td>{@html $t("chapter3.text_sap")} </td>
 				</tr>
 				<tr>
