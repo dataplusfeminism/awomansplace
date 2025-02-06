@@ -26,11 +26,13 @@
  * ```
  */
 declare module '$env/static/private' {
+	export const NVM_RC_VERSION: string;
 	export const GDAL_DRIVER_PATH: string;
 	export const TERM_PROGRAM: string;
 	export const NODE: string;
 	export const PROJ_DATA: string;
 	export const INIT_CWD: string;
+	export const NVM_CD_FLAGS: string;
 	export const TERM: string;
 	export const SHELL: string;
 	export const TMPDIR: string;
@@ -43,6 +45,7 @@ declare module '$env/static/private' {
 	export const TERM_SESSION_ID: string;
 	export const npm_config_noproxy: string;
 	export const npm_config_local_prefix: string;
+	export const NVM_DIR: string;
 	export const USER: string;
 	export const npm_config_globalconfig: string;
 	export const CONDA_EXE: string;
@@ -56,7 +59,6 @@ declare module '$env/static/private' {
 	export const GSETTINGS_SCHEMA_DIR: string;
 	export const npm_package_json: string;
 	export const _: string;
-	export const XML_CATALOG_FILES: string;
 	export const LaunchInstanceID: string;
 	export const npm_config_userconfig: string;
 	export const npm_config_init_module: string;
@@ -118,11 +120,13 @@ declare module '$env/static/public' {
  */
 declare module '$env/dynamic/private' {
 	export const env: {
+		NVM_RC_VERSION: string;
 		GDAL_DRIVER_PATH: string;
 		TERM_PROGRAM: string;
 		NODE: string;
 		PROJ_DATA: string;
 		INIT_CWD: string;
+		NVM_CD_FLAGS: string;
 		TERM: string;
 		SHELL: string;
 		TMPDIR: string;
@@ -135,6 +139,7 @@ declare module '$env/dynamic/private' {
 		TERM_SESSION_ID: string;
 		npm_config_noproxy: string;
 		npm_config_local_prefix: string;
+		NVM_DIR: string;
 		USER: string;
 		npm_config_globalconfig: string;
 		CONDA_EXE: string;
@@ -148,7 +153,6 @@ declare module '$env/dynamic/private' {
 		GSETTINGS_SCHEMA_DIR: string;
 		npm_package_json: string;
 		_: string;
-		XML_CATALOG_FILES: string;
 		LaunchInstanceID: string;
 		npm_config_userconfig: string;
 		npm_config_init_module: string;
