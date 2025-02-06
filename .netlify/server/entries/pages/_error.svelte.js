@@ -13,7 +13,7 @@ const Error = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_page();
   $$unsubscribe_t();
   $$unsubscribe_locale();
-  return `<div class="content"><h1>${escape($t("error.stuff.happens"))} (${escape(status)})</h1> <p>${escape($t(`error.${status}`, { default: $t("error.default") }))}</p> <br> <br> ${escape($locale)} – ${escape($t(`lang.${$locale}`))}</div>`;
+  return `<div class="content"><h1>${escape($t("error.message"))} (${escape(status)})</h1> <p>${escape($t(`error.${status}`, { default: $t("error.default") }))}</p> <br> <br> ${escape($locale)} – ${escape($t(`lang.${$locale}`))}</div>`;
 });
 export {
   Error as default

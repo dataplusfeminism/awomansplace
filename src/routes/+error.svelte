@@ -6,7 +6,7 @@
 </script>
 
 <div class="content">
-  <h1>{$t('error.stuff.happens')} ({status})</h1>
+  <h1>{$t('error.message')} ({status})</h1>
   <p>{$t(`error.${status}`, { default: $t('error.default') })}</p>
   <br>
   <br>

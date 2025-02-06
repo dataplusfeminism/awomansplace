@@ -101,7 +101,8 @@
     "src": "src/hooks.server.js",
     "isDynamicEntry": true,
     "imports": [
-      "_index2.js"
+      "_index2.js",
+      "_internal.js"
     ]
   },
   "src/lib/translations/bn/chapter2.json": {

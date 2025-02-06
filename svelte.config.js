@@ -19,7 +19,7 @@ const config = {
     },
     // Optional base path configuration if deployed on GitHub Pages (sub-path)
     paths: {
-      base: '/womans-place-city' // Update this if needed, e.g. '/my-project'
+      base: '' // Update this if needed, e.g. '/my-project'
     }
     // paths: {
 		// 	base: process.argv.includes('dev') ? '' : process.env.BASE_PATH

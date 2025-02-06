@@ -112,7 +112,7 @@ const config = {
     ],
 };
 
-export const defaultLocale = 'bn';
+export const defaultLocale = 'en';
 
 export const { t, locale, locales, loading, addTranslations, loadTranslations, translations, setRoute, setLocale } = new i18n(config);
 

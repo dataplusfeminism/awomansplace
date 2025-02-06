@@ -141,7 +141,7 @@ const options = {
   root: Root,
   service_worker: false,
   templates: {
-    app: ({ head, body, assets: assets2, nonce, env }) => '<!doctype html>\n<html lang="en">\n\n<head>\n	<meta charset="utf-8" />\n	<link rel="icon" href="favicon.ico" />\n	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />\n	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />\n	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />\n	<meta name="viewport" content="width=device-width, initial-scale=1" />\n	<meta property="og:image" content="womens-place-main.png">\n	' + head + '\n</head>\n\n<body data-sveltekit-preload-data="hover">\n	<div style="display: contents">' + body + "</div>\n</body>\n\n</html>",
+    app: ({ head, body, assets: assets2, nonce, env }) => '<!doctype html>\n<html lang="en">\n\n<head>\n	<meta charset="utf-8" />\n	<link rel="icon" href="' + assets2 + '/favicon.ico" />\n	<link rel="apple-touch-icon" sizes="180x180" href="' + assets2 + '/apple-touch-icon.png" />\n	<link rel="icon" type="image/png" sizes="32x32" href="' + assets2 + '/favicon-32x32.png" />\n	<link rel="icon" type="image/png" sizes="16x16" href="' + assets2 + '/favicon-16x16.png" />\n	<meta name="viewport" content="width=device-width, initial-scale=1" />\n	<meta property="og:image" content="' + assets2 + '/womens-place-main.png">\n	' + head + '\n</head>\n\n<body data-sveltekit-preload-data="hover">\n	<div style="display: contents">' + body + "</div>\n</body>\n\n</html>",
     error: ({ status, message }) => '<!doctype html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<title>' + message + `</title>
 
 		<style>
@@ -213,7 +213,7 @@ const options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "19alp0y"
+  version_hash: "7b0p91"
 };
 async function get_hooks() {
   return {

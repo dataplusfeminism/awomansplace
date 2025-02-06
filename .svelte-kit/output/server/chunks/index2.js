@@ -350,7 +350,7 @@ const config = {
     }
   ]
 };
-const defaultLocale = "bn";
+const defaultLocale = "en";
 const { t: t2, locale, locales, loading, addTranslations, loadTranslations, translations, setRoute, setLocale } = new D(config);
 loading.subscribe(async ($loading) => {
   if ($loading) {

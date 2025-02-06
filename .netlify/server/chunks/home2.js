@@ -25,7 +25,7 @@ const para_11 = "इस निबंध में, हम मुंबई और
 const subheader_3 = "- अग्रिम पठन";
 const fr_link_1 = "<a href='https://www.oxfamindia.org/knowledgehub/workingpaper/towards-violence-free-lives-women-tracking-union-budgets-2018-21-violence-services'>Oxfam India (2021). Towards Violence Free Lives For Women: Tracking Of Union Budgets (2018-21) For Violence Services.</a>";
 const fr_link_2 = "<a href='https://satyarthi.org.in/wp-content/uploads/2022/11/Utilisation-of-Nirbhaya-Fund.pdf'>Kailash Satyarthi Children’s Foundation (2019). An Analysis of Utilisation of Nirbhaya Funds by the States/UTs.</a>";
-const fr_link_3 = "<a href='https: //banthescan.amnesty.org/hyderabad/'>Amnesty International’s Ban the Scan initiative for Hyderabad</a>";
+const fr_link_3 = "<a href='https://banthescan.amnesty.org/hyderabad/'>Amnesty International’s Ban the Scan initiative for Hyderabad</a>";
 const go_to = "→ जाओ";
 const chapter_no = "अध्याय 2: सुरक्षित शहर के बारे में हमारा नज़रिया क्या है?";
 const home = {
