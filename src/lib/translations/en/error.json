@@ -1,7 +1,5 @@
 {
-    "error": {
         "message": "ERROR",
         "default": "This page does not exist. Please click on the Navigation bar to return to the home page.",
         "404": "Page not found."
-    }
 }

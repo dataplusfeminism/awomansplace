@@ -30,7 +30,9 @@ const handle = async ({ event, resolve }) => {
 const handleError = async ({ event }) => {
   const { locals } = event;
   const { lang } = locals;
+  console.log(`[i18n]: Loading translations for language: ${lang}`);
   await loadTranslations(lang, "error");
+  console.log(`[i18n]: Translations loaded for '${lang}/error'`, locales.get());
   return {
     message: `An error occurred: ${lang}`,
     status: event.status ?? 500

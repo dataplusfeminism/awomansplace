@@ -28,17 +28,20 @@
     ],
     "dynamicImports": [
       "src/lib/translations/en/menu.json",
+      "src/lib/translations/en/error.json",
       "src/lib/translations/en/home.json",
       "src/lib/translations/en/chapter2.json",
       "src/lib/translations/en/chapter3.json",
       "src/lib/translations/en/method.json",
       "src/lib/translations/hi/menu.json",
+      "src/lib/translations/hi/error.json",
       "src/lib/translations/hi/home.json",
       "src/lib/translations/hi/method.json",
       "src/lib/translations/hi/chapter2.json",
       "src/lib/translations/hi/chapter3.json",
       "src/lib/translations/hi/method.json",
       "src/lib/translations/bn/menu.json",
+      "src/lib/translations/bn/error.json",
       "src/lib/translations/bn/home.json",
       "src/lib/translations/bn/method.json",
       "src/lib/translations/bn/chapter2.json",
@@ -74,6 +77,17 @@
   "_utils.js": {
     "file": "chunks/utils.js",
     "name": "utils"
+  },
+  "node_modules/@sveltejs/kit/src/runtime/components/svelte-4/error.svelte": {
+    "file": "entries/fallbacks/error.svelte.js",
+    "name": "entries/fallbacks/error.svelte",
+    "src": "node_modules/@sveltejs/kit/src/runtime/components/svelte-4/error.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_stores.js"
+    ]
   },
   "node_modules/@sveltejs/kit/src/runtime/components/svelte-4/layout.svelte": {
     "file": "entries/fallbacks/layout.svelte.js",
@@ -117,6 +131,12 @@
     "src": "src/lib/translations/bn/chapter3.json",
     "isDynamicEntry": true
   },
+  "src/lib/translations/bn/error.json": {
+    "file": "chunks/error3.js",
+    "name": "error",
+    "src": "src/lib/translations/bn/error.json",
+    "isDynamicEntry": true
+  },
   "src/lib/translations/bn/home.json": {
     "file": "chunks/home3.js",
     "name": "home",
@@ -145,6 +165,12 @@
     "file": "chunks/chapter3.js",
     "name": "chapter3",
     "src": "src/lib/translations/en/chapter3.json",
+    "isDynamicEntry": true
+  },
+  "src/lib/translations/en/error.json": {
+    "file": "chunks/error.js",
+    "name": "error",
+    "src": "src/lib/translations/en/error.json",
     "isDynamicEntry": true
   },
   "src/lib/translations/en/home.json": {
@@ -177,6 +203,12 @@
     "src": "src/lib/translations/hi/chapter3.json",
     "isDynamicEntry": true
   },
+  "src/lib/translations/hi/error.json": {
+    "file": "chunks/error2.js",
+    "name": "error",
+    "src": "src/lib/translations/hi/error.json",
+    "isDynamicEntry": true
+  },
   "src/lib/translations/hi/home.json": {
     "file": "chunks/home2.js",
     "name": "home",
@@ -195,18 +227,6 @@
     "src": "src/lib/translations/hi/method.json",
     "isDynamicEntry": true
   },
-  "src/routes/+error.svelte": {
-    "file": "entries/pages/_error.svelte.js",
-    "name": "entries/pages/_error.svelte",
-    "src": "src/routes/+error.svelte",
-    "isEntry": true,
-    "imports": [
-      "_utils.js",
-      "_ssr.js",
-      "_stores.js",
-      "_index2.js"
-    ]
-  },
   "src/routes/+layout.js": {
     "file": "entries/pages/_layout.js",
     "name": "entries/pages/_layout",
@@ -223,6 +243,21 @@
     "isEntry": true,
     "imports": [
       "_index2.js"
+    ]
+  },
+  "src/routes/[lang]/+error.svelte": {
+    "file": "entries/pages/_lang_/_error.svelte.js",
+    "name": "entries/pages/_lang_/_error.svelte",
+    "src": "src/routes/[lang]/+error.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_stores.js",
+      "_index2.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_error.BKufd5xg.css"
     ]
   },
   "src/routes/[lang]/+layout.svelte": {

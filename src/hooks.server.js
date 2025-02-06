@@ -68,8 +68,12 @@ export const handleError = async ({ event }) => {
   const { locals } = event;
   const { lang } = locals;
 
+  console.log(`[i18n]: Loading translations for language: ${lang}`);
+
   // Load translations for the error messages
   await loadTranslations(lang, 'error');
+
+  console.log(`[i18n]: Translations loaded for '${lang}/error'`, locales.get());
 
   return {
     message: `An error occurred: ${lang}`,

@@ -1,6 +1,6 @@
 import { s as subscribe } from "../../../chunks/utils.js";
 import { c as create_ssr_component, a as add_attribute, e as escape, b as each, v as validate_component } from "../../../chunks/ssr.js";
-import { d as locale, c as t, e as locales } from "../../../chunks/index2.js";
+import { c as locale, d as t, e as locales } from "../../../chunks/index2.js";
 import { p as page } from "../../../chunks/stores.js";
 const css = {
   code: 'nav.svelte-wyg3j4{justify-content:space-between;padding:0.5em 1em 0.5em;max-width:1024px;margin:auto;color:#de45aa}.logo.svelte-wyg3j4{height:80px;max-height:80px;width:auto}.name.svelte-wyg3j4{align-self:center;font-size:28px;font-family:"Laila", serif;font-weight:600;transition:color 0.75s;padding-left:10px}@media(max-width: 640px){.name.svelte-wyg3j4{font-size:24px}}:root{--body-bg-color:#1a1c1d;--text-color:#aaaebc;--red:#e74c3c}a.svelte-wyg3j4{color:inherit;text-decoration:none}.name.svelte-wyg3j4:hover{background:linear-gradient(\n      to left,\n      #4c136f 20%,\n      #eb3de4 30%,\n      #56bbb7 70%,\n      #efb215 80%\n    );-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;text-fill-color:transparent;background-size:200% auto;animation:svelte-wyg3j4-textShine 7s ease-in-out infinite alternate;text-decoration:none}@keyframes svelte-wyg3j4-textShine{to{background-position:200%}}',

@@ -241,7 +241,6 @@ const lang = {
   hi,
   bn
 };
-console.log("!!!", lang);
 const config = {
   translations: {
     en: { lang },
@@ -253,6 +252,11 @@ const config = {
       locale: "en",
       key: "menu",
       loader: async () => (await import("./menu.js")).default
+    },
+    {
+      locale: "en",
+      key: "error",
+      loader: async () => (await import("./error.js")).default
     },
     {
       locale: "en",
@@ -282,6 +286,11 @@ const config = {
       locale: "hi",
       key: "menu",
       loader: async () => (await import("./menu2.js")).default
+    },
+    {
+      locale: "hi",
+      key: "error",
+      loader: async () => (await import("./error2.js")).default
     },
     {
       locale: "hi",
@@ -317,6 +326,11 @@ const config = {
       locale: "bn",
       key: "menu",
       loader: async () => (await import("./menu3.js")).default
+    },
+    {
+      locale: "bn",
+      key: "error",
+      loader: async () => (await import("./error3.js")).default
     },
     {
       locale: "bn",
@@ -357,14 +371,14 @@ loading.subscribe(async ($loading) => {
     console.log("Loading translations...");
     await loading.toPromise();
     console.log("Updated translations", translations.get());
-    console.log(translations);
+    console.log("----", translations);
   }
 });
 export {
   addTranslations as a,
   setLocale as b,
-  t2 as c,
-  locale as d,
+  locale as c,
+  t2 as d,
   locales as e,
   defaultLocale as f,
   loadTranslations as l,
