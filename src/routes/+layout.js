@@ -1,5 +1,7 @@
 import { addTranslations, setLocale, setRoute } from '$lib/translations';
 
+export const prerender = true;
+
 /** @type {import('@sveltejs/kit').LayoutLoad} */
 export const load = async ({ data }) => {
   const { i18n, translations } = data;

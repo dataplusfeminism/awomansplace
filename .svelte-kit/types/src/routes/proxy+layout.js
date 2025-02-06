@@ -1,6 +1,8 @@
 // @ts-nocheck
 import { addTranslations, setLocale, setRoute } from '$lib/translations';
 
+export const prerender = true;
+
 /** @param {Parameters<import('@sveltejs/kit').LayoutLoad>[0]} event */
 export const load = async ({ data }) => {
   const { i18n, translations } = data;

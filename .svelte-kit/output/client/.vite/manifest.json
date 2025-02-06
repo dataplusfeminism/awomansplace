@@ -1,6 +1,6 @@
 {
   ".svelte-kit/generated/client-optimized/app.js": {
-    "file": "_app/immutable/entry/app.D4cEMgc8.js",
+    "file": "_app/immutable/entry/app.aWZb_6fY.js",
     "name": "entry/app",
     "src": ".svelte-kit/generated/client-optimized/app.js",
     "isEntry": true,
@@ -32,7 +32,7 @@
     ]
   },
   ".svelte-kit/generated/client-optimized/nodes/1.js": {
-    "file": "_app/immutable/nodes/1.ZSxOVOYu.js",
+    "file": "_app/immutable/nodes/1.BeFMQPlU.js",
     "name": "nodes/1",
     "src": ".svelte-kit/generated/client-optimized/nodes/1.js",
     "isEntry": true,
@@ -40,12 +40,12 @@
     "imports": [
       "_scheduler.6wlBD6-3.js",
       "_index.D3blekvI.js",
-      "_stores.BM3z0I3Q.js",
+      "_stores.B-DsBvd4.js",
       "_index.DnOrKzsY.js"
     ]
   },
   ".svelte-kit/generated/client-optimized/nodes/2.js": {
-    "file": "_app/immutable/nodes/2.D4QN5-Ec.js",
+    "file": "_app/immutable/nodes/2.BjfOMyhy.js",
     "name": "nodes/2",
     "src": ".svelte-kit/generated/client-optimized/nodes/2.js",
     "isEntry": true,
@@ -54,8 +54,8 @@
       "_scheduler.6wlBD6-3.js",
       "_index.D3blekvI.js",
       "_index.DnOrKzsY.js",
-      "_stores.BM3z0I3Q.js",
-      "_entry.Ce53dlCL.js"
+      "_stores.B-DsBvd4.js",
+      "_entry.CTuHUuyZ.js"
     ],
     "css": [
       "_app/immutable/assets/2.Dvu7-KND.css"
@@ -134,8 +134,8 @@
       "_app/immutable/assets/7.CbS4QTuO.css"
     ]
   },
-  "_entry.Ce53dlCL.js": {
-    "file": "_app/immutable/chunks/entry.Ce53dlCL.js",
+  "_entry.CTuHUuyZ.js": {
+    "file": "_app/immutable/chunks/entry.CTuHUuyZ.js",
     "name": "entry",
     "imports": [
       "_scheduler.6wlBD6-3.js",
@@ -188,20 +188,20 @@
     "file": "_app/immutable/chunks/scheduler.6wlBD6-3.js",
     "name": "scheduler"
   },
-  "_stores.BM3z0I3Q.js": {
-    "file": "_app/immutable/chunks/stores.BM3z0I3Q.js",
+  "_stores.B-DsBvd4.js": {
+    "file": "_app/immutable/chunks/stores.B-DsBvd4.js",
     "name": "stores",
     "imports": [
-      "_entry.Ce53dlCL.js"
+      "_entry.CTuHUuyZ.js"
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/client/entry.js": {
-    "file": "_app/immutable/entry/start.BSKNNc_D.js",
+    "file": "_app/immutable/entry/start.DF7gNI_E.js",
     "name": "entry/start",
     "src": "node_modules/@sveltejs/kit/src/runtime/client/entry.js",
     "isEntry": true,
     "imports": [
-      "_entry.Ce53dlCL.js"
+      "_entry.CTuHUuyZ.js"
     ]
   },
   "src/lib/translations/bn/chapter2.json": {
