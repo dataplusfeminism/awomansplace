@@ -14,16 +14,20 @@
   },
   "_index.js": {
     "file": "chunks/index.js",
-    "name": "index",
-    "imports": [
-      "_utils.js"
-    ]
+    "name": "index"
   },
   "_index2.js": {
     "file": "chunks/index2.js",
     "name": "index",
     "imports": [
-      "_index.js",
+      "_utils.js"
+    ]
+  },
+  "_index3.js": {
+    "file": "chunks/index3.js",
+    "name": "index",
+    "imports": [
+      "_index2.js",
       "_utils.js"
     ],
     "dynamicImports": [
@@ -78,17 +82,6 @@
     "file": "chunks/utils.js",
     "name": "utils"
   },
-  "node_modules/@sveltejs/kit/src/runtime/components/svelte-4/error.svelte": {
-    "file": "entries/fallbacks/error.svelte.js",
-    "name": "entries/fallbacks/error.svelte",
-    "src": "node_modules/@sveltejs/kit/src/runtime/components/svelte-4/error.svelte",
-    "isEntry": true,
-    "imports": [
-      "_utils.js",
-      "_ssr.js",
-      "_stores.js"
-    ]
-  },
   "node_modules/@sveltejs/kit/src/runtime/components/svelte-4/layout.svelte": {
     "file": "entries/fallbacks/layout.svelte.js",
     "name": "entries/fallbacks/layout.svelte",
@@ -105,8 +98,9 @@
     "isEntry": true,
     "imports": [
       "_internal.js",
+      "_index.js",
       "_exports.js",
-      "_index.js"
+      "_index2.js"
     ]
   },
   "src/hooks.server.js": {
@@ -115,8 +109,9 @@
     "src": "src/hooks.server.js",
     "isDynamicEntry": true,
     "imports": [
-      "_index2.js",
-      "_internal.js"
+      "_index3.js",
+      "_internal.js",
+      "_index.js"
     ]
   },
   "src/lib/translations/bn/chapter2.json": {
@@ -227,13 +222,25 @@
     "src": "src/lib/translations/hi/method.json",
     "isDynamicEntry": true
   },
+  "src/routes/+error.svelte": {
+    "file": "entries/pages/_error.svelte.js",
+    "name": "entries/pages/_error.svelte",
+    "src": "src/routes/+error.svelte",
+    "isEntry": true,
+    "imports": [
+      "_utils.js",
+      "_ssr.js",
+      "_stores.js",
+      "_index3.js"
+    ]
+  },
   "src/routes/+layout.js": {
     "file": "entries/pages/_layout.js",
     "name": "entries/pages/_layout",
     "src": "src/routes/+layout.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_index3.js"
     ]
   },
   "src/routes/+layout.server.js": {
@@ -242,22 +249,7 @@
     "src": "src/routes/+layout.server.js",
     "isEntry": true,
     "imports": [
-      "_index2.js"
-    ]
-  },
-  "src/routes/[lang]/+error.svelte": {
-    "file": "entries/pages/_lang_/_error.svelte.js",
-    "name": "entries/pages/_lang_/_error.svelte",
-    "src": "src/routes/[lang]/+error.svelte",
-    "isEntry": true,
-    "imports": [
-      "_utils.js",
-      "_ssr.js",
-      "_stores.js",
-      "_index2.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_error.BKufd5xg.css"
+      "_index3.js"
     ]
   },
   "src/routes/[lang]/+layout.svelte": {
@@ -268,7 +260,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_index2.js",
+      "_index3.js",
       "_stores.js"
     ],
     "css": [
@@ -283,7 +275,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_index2.js"
+      "_index3.js"
     ],
     "css": [
       "_app/immutable/assets/_page.B-opn6B9.css"
@@ -297,7 +289,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_index2.js"
+      "_index3.js"
     ]
   },
   "src/routes/[lang]/chapter2/+page.svelte": {
@@ -308,7 +300,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_index2.js"
+      "_index3.js"
     ],
     "css": [
       "_app/immutable/assets/_page.DmicMAaR.css"
@@ -322,8 +314,8 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_index.js",
-      "_index2.js"
+      "_index2.js",
+      "_index3.js"
     ],
     "css": [
       "_app/immutable/assets/_page.DZImpaSH.css"
@@ -337,7 +329,7 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_index2.js"
+      "_index3.js"
     ],
     "css": [
       "_app/immutable/assets/_page.b61STXoe.css"

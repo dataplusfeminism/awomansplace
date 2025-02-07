@@ -1,6 +1,6 @@
 import { s as subscribe } from "../../../../chunks/utils.js";
 import { c as create_ssr_component, e as escape } from "../../../../chunks/ssr.js";
-import { d as t } from "../../../../chunks/index2.js";
+import { c as t } from "../../../../chunks/index3.js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $t, $$unsubscribe_t;
   $$unsubscribe_t = subscribe(t, (value) => $t = value);

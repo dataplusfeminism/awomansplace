@@ -1,5 +1,6 @@
 import { defaultLocale, loadTranslations, locales } from '$lib/translations';
 import { base } from '$app/paths';
+import { error } from '@sveltejs/kit';
 
 /** @type {import('@sveltejs/kit').Handle} */
 export const handle = async ({ event, resolve }) => {
@@ -70,13 +71,18 @@ export const handleError = async ({ event }) => {
 
   console.log(`[i18n]: Loading translations for language: ${lang}`);
 
-  // Load translations for the error messages
-  await loadTranslations(lang, 'error');
+  // ✅ Load translations for the error messages
+  await loadTranslations(lang, "error");
+
+  // ✅ Get the translated error message and "Go back home" link text
+  console.log('!!!', locales.get()?.[lang])
+  const errorMessage = locales.get()?.[lang]?.error?.general || "An unexpected error occurred.";
+  const goHomeMessage = locales.get()?.[lang]?.error?.go_home || "🏠 Go back home. 🏠";
 
   console.log(`[i18n]: Translations loaded for '${lang}/error'`, locales.get());
 
-  return {
-    message: `An error occurred: ${lang}`,
-    status: event.status ?? 500
-  };
+  // ✅ Throw an error with a message that includes a link
+  throw error(500, {
+    message: `${errorMessage} <a href='/' style='color:blue; text-decoration:underline;'>${goHomeMessage}</a>`
+  });
 };

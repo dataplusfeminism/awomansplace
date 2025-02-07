@@ -6,7 +6,7 @@ const config = {
   kit: {
     adapter: adapter({
       // Specify the fallback for dynamic routes
-      fallback: 'index.html' // This will catch-all non-prerendered routes
+      fallback: 'en.html' // This will catch-all non-prerendered routes
     }),
     prerender: {
       entries: [

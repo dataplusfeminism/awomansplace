@@ -1,4 +1,4 @@
-import { a as addTranslations, s as setRoute, b as setLocale } from "../../chunks/index2.js";
+import { a as addTranslations, s as setRoute, b as setLocale } from "../../chunks/index3.js";
 const prerender = true;
 const load = async ({ data }) => {
   const { i18n, translations } = data;
