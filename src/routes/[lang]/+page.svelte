@@ -1,5 +1,6 @@
 <script>
 	import { t, locale, locales } from "$lib/translations";
+	import { base } from "$app/paths";
 </script>
 
 <svelte:head>
@@ -141,7 +142,7 @@
 		</p>
 		
 		<div class='text-right'>
-			<a href={`../${$locale}/chapter2`}
+			<a href={`${base}/${$locale}/chapter2`}
 				><h3 class="py-8 bold">
 					{@html $t("home.go_to")}
 					<span class="yellow font-bold"

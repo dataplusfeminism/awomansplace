@@ -1,5 +1,5 @@
 import { e as locales, f as defaultLocale, l as loadTranslations } from "./index3.js";
-import { b as base } from "./internal.js";
+import { b as base } from "./paths.js";
 import { e as error } from "./index.js";
 const handle = async ({ event, resolve }) => {
   const { url, request } = event;

@@ -1,16 +1,17 @@
 /* eslint-disable */
 import adapter from '@sveltejs/adapter-static';
+// import { vitePreprocess } from '@sveltejs/kit/vite';
 
 /** @type {import('@sveltejs/kit').Config} */
 
 const dev = process.argv.includes('dev');
-const base = dev ? '' : '/womans-place-city'; // GitHub Pages repo name
+const base = dev ? '' : '/womans-place-city'; // Change 'my-website' to your actual repo name
 
 const config = {
   kit: {
     adapter: adapter({
       // Specify the fallback for dynamic routes
-      fallback: 'en.html' // This will catch-all non-prerendered routes
+      fallback: 'index.html' // This will catch-all non-prerendered routes
     }),
     prerender: {
       entries: [
@@ -19,15 +20,19 @@ const config = {
         '/hi', '/hi/about', '/hi/chapter2', '/hi/chapter3', '/hi/method',
         '/bn', '/bn/about', '/bn/chapter2', '/bn/chapter3', '/bn/method',
         // Add other language variations here
-      ]
+      ],
+      handleHttpError: 'warn' // Prevents 404 errors from stopping the build
     },
     // Optional base path configuration if deployed on GitHub Pages (sub-path)
     paths: {
-      base: '', // Update this if needed, e.g. '/my-project',
+      base: process.env.NODE_ENV === "production" ? "/womans-place-city" : "", // Update this if needed, e.g. '/my-project',
     },
-    //trailingSlash: 'always', // Ensures URLs are consistent
-    //appDir: 'internal' // Fixes CSS issues
+    // appDir: 'internal',
+    // paths: {
+		// 	base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
+		// }
   },
+  // preprocess: vitePreprocess()
 };
 
 export default config;

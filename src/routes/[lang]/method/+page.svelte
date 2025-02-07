@@ -1,5 +1,6 @@
 <script>
     import { t, locale, locales } from "$lib/translations";
+    import { base } from "$app/paths";
 </script>
 
 <svelte:head>
@@ -83,7 +84,7 @@
 
         <div class="flex justify-between py-8">
             <div class="chapter-link">
-                <a href={`../${$locale}/chapter3`}>
+                <a href={`${base}/${$locale}/chapter3`}>
                     {@html $t("method.go_back")}
                     <span class="pink font-bold"
                         >{@html $t("method.back_chapter")}
@@ -91,7 +92,7 @@
                 </a>
             </div>
             <div class="chapter-link">
-                <a href={`../${$locale}`}>
+                <a href={`${base}/${$locale}`}>
                     <span class="pink font-bold">
                         {@html $t("method.home")}
                     </span> 🏡

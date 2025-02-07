@@ -1,6 +1,7 @@
 import { w as writable, d as derived } from "./index2.js";
 import { g as get_store_value } from "./utils.js";
 import C$1 from "@sveltekit-i18n/parser-default";
+import { b as base } from "./paths.js";
 var H = Object.defineProperty, q = Object.defineProperties;
 var B = Object.getOwnPropertyDescriptors;
 var x = Object.getOwnPropertySymbols;
@@ -251,116 +252,116 @@ const config = {
     {
       locale: "en",
       key: "menu",
-      loader: async () => (await import("./menu.js")).default
+      loader: async () => (await import(`${base}/en/menu.json`)).default
     },
     {
       locale: "en",
       key: "error",
-      loader: async () => (await import("./error.js")).default
+      loader: async () => (await import(`${base}/en/error.json`)).default
     },
     {
       locale: "en",
       key: "home",
       routes: ["", "/"],
-      loader: async () => (await import("./home.js")).default
+      loader: async () => (await import(`${base}/en/home.json`)).default
     },
     {
       locale: "en",
       key: "chapter2",
       routes: ["/chapter2"],
-      loader: async () => (await import("./chapter2.js")).default
+      loader: async () => (await import(`${base}/en/chapter2.json`)).default
     },
     {
       locale: "en",
       key: "chapter3",
       routes: ["/chapter3"],
-      loader: async () => (await import("./chapter3.js")).default
+      loader: async () => (await import(`${base}/en/chapter3.json`)).default
     },
     {
       locale: "en",
       key: "method",
       routes: ["/method"],
-      loader: async () => (await import("./method.js")).default
+      loader: async () => (await import(`${base}/en/method.json`)).default
     },
     {
       locale: "hi",
       key: "menu",
-      loader: async () => (await import("./menu2.js")).default
+      loader: async () => (await import(`${base}/hi/menu.json`)).default
     },
     {
       locale: "hi",
       key: "error",
-      loader: async () => (await import("./error2.js")).default
+      loader: async () => (await import(`${base}/hi/error.json`)).default
     },
     {
       locale: "hi",
       key: "home",
       routes: ["", "/"],
-      loader: async () => (await import("./home2.js")).default
+      loader: async () => (await import(`${base}/hi/home.json`)).default
     },
     {
       locale: "hi",
       key: "method",
       routes: ["/method"],
-      loader: async () => (await import("./method2.js")).default
+      loader: async () => (await import(`${base}/hi/method.json`)).default
     },
     {
       locale: "hi",
       key: "chapter2",
       routes: ["/chapter2"],
-      loader: async () => (await import("./chapter22.js")).default
+      loader: async () => (await import(`${base}/hi/chapter2.json`)).default
     },
     {
       locale: "hi",
       key: "chapter3",
       routes: ["/chapter3"],
-      loader: async () => (await import("./chapter32.js")).default
+      loader: async () => (await import(`${base}/hi/chapter3.json`)).default
     },
     {
       locale: "hi",
       key: "method",
       routes: ["/method"],
-      loader: async () => (await import("./method2.js")).default
+      loader: async () => (await import(`${base}/hi/method.json`)).default
     },
     {
       locale: "bn",
       key: "menu",
-      loader: async () => (await import("./menu3.js")).default
+      loader: async () => (await import(`${base}/bn/menu.json`)).default
     },
     {
       locale: "bn",
       key: "error",
-      loader: async () => (await import("./error3.js")).default
+      loader: async () => (await import(`${base}/bn/error.json`)).default
     },
     {
       locale: "bn",
       key: "home",
       routes: ["", "/"],
-      loader: async () => (await import("./home3.js")).default
+      loader: async () => (await import(`${base}/bn/home.json`)).default
     },
     {
       locale: "bn",
       key: "method",
       routes: ["/method"],
-      loader: async () => (await import("./method3.js")).default
+      loader: async () => (await import(`${base}/bn/method.json`)).default
     },
     {
       locale: "bn",
       key: "chapter2",
       routes: ["/chapter2"],
-      loader: async () => (await import("./chapter23.js")).default
+      loader: async () => (await import(`${base}/bn/chapter2.json`)).default
     },
     {
       locale: "bn",
       key: "chapter3",
       routes: ["/chapter3"],
-      loader: async () => (await import("./chapter33.js")).default
+      loader: async () => (await import(`${base}/bn/chapter3.json`)).default
     },
     {
       locale: "bn",
       key: "method",
       routes: ["/method"],
-      loader: async () => (await import("./method3.js")).default
+      loader: async () => (await import(`${base}/bn/method.json`)).default
     }
   ]
 };

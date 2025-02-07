@@ -1,18 +1,5 @@
 import { c as create_ssr_component, s as setContext, v as validate_component, m as missing_component } from "./ssr.js";
-let base = "";
-let assets = base;
-const initial = { base, assets };
-function override(paths) {
-  base = paths.base;
-  assets = paths.assets;
-}
-function reset() {
-  base = initial.base;
-  assets = initial.assets;
-}
-function set_assets(path) {
-  assets = initial.assets = path;
-}
+import "./paths.js";
 let public_env = {};
 let safe_public_env = {};
 function set_private_env(environment) {
@@ -141,7 +128,7 @@ const options = {
   root: Root,
   service_worker: false,
   templates: {
-    app: ({ head, body, assets: assets2, nonce, env }) => '<!doctype html>\n<html lang="en">\n\n<head>\n	<meta charset="utf-8" />\n	<link rel="icon" href="' + assets2 + '/favicon.ico" />\n	<link rel="apple-touch-icon" sizes="180x180" href="' + assets2 + '/apple-touch-icon.png" />\n	<link rel="icon" type="image/png" sizes="32x32" href="' + assets2 + '/favicon-32x32.png" />\n	<link rel="icon" type="image/png" sizes="16x16" href="' + assets2 + '/favicon-16x16.png" />\n	<meta name="viewport" content="width=device-width, initial-scale=1" />\n	<meta property="og:image" content="' + assets2 + '/womens-place-main.png">\n	' + head + '\n</head>\n\n<body data-sveltekit-preload-data="hover">\n	<div style="display: contents">' + body + "</div>\n</body>\n\n</html>",
+    app: ({ head, body, assets, nonce, env }) => '<!doctype html>\n<html lang="en">\n\n<head>\n	<meta charset="utf-8" />\n	<link rel="icon" href="' + assets + '/favicon.ico" />\n	<link rel="apple-touch-icon" sizes="180x180" href="' + assets + '/apple-touch-icon.png" />\n	<link rel="icon" type="image/png" sizes="32x32" href="' + assets + '/favicon-32x32.png" />\n	<link rel="icon" type="image/png" sizes="16x16" href="' + assets + '/favicon-16x16.png" />\n	<meta name="viewport" content="width=device-width, initial-scale=1" />\n	<meta property="og:image" content="' + assets + '/womens-place-main.png">\n	' + head + '\n</head>\n\n<body data-sveltekit-preload-data="hover">\n	<div style="display: contents">' + body + "</div>\n</body>\n\n</html>",
     error: ({ status, message }) => '<!doctype html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<title>' + message + `</title>
 
 		<style>
@@ -213,7 +200,7 @@ const options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "z5gt5n"
+  version_hash: "1kv7lsu"
 };
 async function get_hooks() {
   return {
@@ -221,21 +208,16 @@ async function get_hooks() {
   };
 }
 export {
-  assets as a,
-  base as b,
-  options as c,
-  set_private_env as d,
-  prerendering as e,
-  set_public_env as f,
+  set_private_env as a,
+  prerendering as b,
+  set_public_env as c,
+  set_safe_public_env as d,
+  set_building as e,
+  set_manifest as f,
   get_hooks as g,
-  set_safe_public_env as h,
-  set_assets as i,
-  set_building as j,
-  set_manifest as k,
-  set_prerendering as l,
-  set_read_implementation as m,
-  override as o,
+  set_prerendering as h,
+  set_read_implementation as i,
+  options as o,
   public_env as p,
-  reset as r,
   safe_public_env as s
 };

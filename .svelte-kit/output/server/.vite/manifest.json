@@ -5,7 +5,8 @@
     "src": ".svelte-kit/generated/server/internal.js",
     "isEntry": true,
     "imports": [
-      "_internal.js"
+      "_internal.js",
+      "_paths.js"
     ]
   },
   "_exports.js": {
@@ -28,40 +29,24 @@
     "name": "index",
     "imports": [
       "_index2.js",
-      "_utils.js"
-    ],
-    "dynamicImports": [
-      "src/lib/translations/en/menu.json",
-      "src/lib/translations/en/error.json",
-      "src/lib/translations/en/home.json",
-      "src/lib/translations/en/chapter2.json",
-      "src/lib/translations/en/chapter3.json",
-      "src/lib/translations/en/method.json",
-      "src/lib/translations/hi/menu.json",
-      "src/lib/translations/hi/error.json",
-      "src/lib/translations/hi/home.json",
-      "src/lib/translations/hi/method.json",
-      "src/lib/translations/hi/chapter2.json",
-      "src/lib/translations/hi/chapter3.json",
-      "src/lib/translations/hi/method.json",
-      "src/lib/translations/bn/menu.json",
-      "src/lib/translations/bn/error.json",
-      "src/lib/translations/bn/home.json",
-      "src/lib/translations/bn/method.json",
-      "src/lib/translations/bn/chapter2.json",
-      "src/lib/translations/bn/chapter3.json",
-      "src/lib/translations/bn/method.json"
+      "_utils.js",
+      "_paths.js"
     ]
   },
   "_internal.js": {
     "file": "chunks/internal.js",
     "name": "internal",
     "imports": [
-      "_ssr.js"
+      "_ssr.js",
+      "_paths.js"
     ],
     "dynamicImports": [
       "src/hooks.server.js"
     ]
+  },
+  "_paths.js": {
+    "file": "chunks/paths.js",
+    "name": "paths"
   },
   "_ssr.js": {
     "file": "chunks/ssr.js",
@@ -97,10 +82,11 @@
     "src": "node_modules/@sveltejs/kit/src/runtime/server/index.js",
     "isEntry": true,
     "imports": [
-      "_internal.js",
+      "_paths.js",
       "_index.js",
       "_exports.js",
-      "_index2.js"
+      "_index2.js",
+      "_internal.js"
     ]
   },
   "src/hooks.server.js": {
@@ -110,117 +96,9 @@
     "isDynamicEntry": true,
     "imports": [
       "_index3.js",
-      "_internal.js",
+      "_paths.js",
       "_index.js"
     ]
-  },
-  "src/lib/translations/bn/chapter2.json": {
-    "file": "chunks/chapter23.js",
-    "name": "chapter2",
-    "src": "src/lib/translations/bn/chapter2.json",
-    "isDynamicEntry": true
-  },
-  "src/lib/translations/bn/chapter3.json": {
-    "file": "chunks/chapter33.js",
-    "name": "chapter3",
-    "src": "src/lib/translations/bn/chapter3.json",
-    "isDynamicEntry": true
-  },
-  "src/lib/translations/bn/error.json": {
-    "file": "chunks/error3.js",
-    "name": "error",
-    "src": "src/lib/translations/bn/error.json",
-    "isDynamicEntry": true
-  },
-  "src/lib/translations/bn/home.json": {
-    "file": "chunks/home3.js",
-    "name": "home",
-    "src": "src/lib/translations/bn/home.json",
-    "isDynamicEntry": true
-  },
-  "src/lib/translations/bn/menu.json": {
-    "file": "chunks/menu3.js",
-    "name": "menu",
-    "src": "src/lib/translations/bn/menu.json",
-    "isDynamicEntry": true
-  },
-  "src/lib/translations/bn/method.json": {
-    "file": "chunks/method3.js",
-    "name": "method",
-    "src": "src/lib/translations/bn/method.json",
-    "isDynamicEntry": true
-  },
-  "src/lib/translations/en/chapter2.json": {
-    "file": "chunks/chapter2.js",
-    "name": "chapter2",
-    "src": "src/lib/translations/en/chapter2.json",
-    "isDynamicEntry": true
-  },
-  "src/lib/translations/en/chapter3.json": {
-    "file": "chunks/chapter3.js",
-    "name": "chapter3",
-    "src": "src/lib/translations/en/chapter3.json",
-    "isDynamicEntry": true
-  },
-  "src/lib/translations/en/error.json": {
-    "file": "chunks/error.js",
-    "name": "error",
-    "src": "src/lib/translations/en/error.json",
-    "isDynamicEntry": true
-  },
-  "src/lib/translations/en/home.json": {
-    "file": "chunks/home.js",
-    "name": "home",
-    "src": "src/lib/translations/en/home.json",
-    "isDynamicEntry": true
-  },
-  "src/lib/translations/en/menu.json": {
-    "file": "chunks/menu.js",
-    "name": "menu",
-    "src": "src/lib/translations/en/menu.json",
-    "isDynamicEntry": true
-  },
-  "src/lib/translations/en/method.json": {
-    "file": "chunks/method.js",
-    "name": "method",
-    "src": "src/lib/translations/en/method.json",
-    "isDynamicEntry": true
-  },
-  "src/lib/translations/hi/chapter2.json": {
-    "file": "chunks/chapter22.js",
-    "name": "chapter2",
-    "src": "src/lib/translations/hi/chapter2.json",
-    "isDynamicEntry": true
-  },
-  "src/lib/translations/hi/chapter3.json": {
-    "file": "chunks/chapter32.js",
-    "name": "chapter3",
-    "src": "src/lib/translations/hi/chapter3.json",
-    "isDynamicEntry": true
-  },
-  "src/lib/translations/hi/error.json": {
-    "file": "chunks/error2.js",
-    "name": "error",
-    "src": "src/lib/translations/hi/error.json",
-    "isDynamicEntry": true
-  },
-  "src/lib/translations/hi/home.json": {
-    "file": "chunks/home2.js",
-    "name": "home",
-    "src": "src/lib/translations/hi/home.json",
-    "isDynamicEntry": true
-  },
-  "src/lib/translations/hi/menu.json": {
-    "file": "chunks/menu2.js",
-    "name": "menu",
-    "src": "src/lib/translations/hi/menu.json",
-    "isDynamicEntry": true
-  },
-  "src/lib/translations/hi/method.json": {
-    "file": "chunks/method2.js",
-    "name": "method",
-    "src": "src/lib/translations/hi/method.json",
-    "isDynamicEntry": true
   },
   "src/routes/+error.svelte": {
     "file": "entries/pages/_error.svelte.js",
@@ -275,10 +153,11 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_index3.js"
+      "_index3.js",
+      "_paths.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.B-opn6B9.css"
+      "_app/immutable/assets/_page.C8noDNrA.css"
     ]
   },
   "src/routes/[lang]/about/+page.svelte": {
@@ -300,7 +179,8 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_index3.js"
+      "_index3.js",
+      "_paths.js"
     ],
     "css": [
       "_app/immutable/assets/_page.DmicMAaR.css"
@@ -315,10 +195,11 @@
       "_utils.js",
       "_ssr.js",
       "_index2.js",
-      "_index3.js"
+      "_index3.js",
+      "_paths.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.DZImpaSH.css"
+      "_app/immutable/assets/_page.57XupJb0.css"
     ]
   },
   "src/routes/[lang]/method/+page.svelte": {
@@ -329,7 +210,8 @@
     "imports": [
       "_utils.js",
       "_ssr.js",
-      "_index3.js"
+      "_index3.js",
+      "_paths.js"
     ],
     "css": [
       "_app/immutable/assets/_page.b61STXoe.css"

@@ -2,7 +2,7 @@ import i18n from 'sveltekit-i18n';
 import lang from './lang.json';
 
 /** @type {import('sveltekit-i18n').Config} */
-
+console.log("!!!", lang)
 const config = {
     translations: {
         en: { lang },
@@ -14,11 +14,6 @@ const config = {
             locale: 'en',
             key: 'menu',
             loader: async () => (await import('./en/menu.json')).default,
-        },
-        {
-            locale: 'en',
-            key: 'error',
-            loader: async () => (await import('./en/error.json')).default,
         },
         {
             locale: 'en',
@@ -48,11 +43,6 @@ const config = {
             locale: 'hi',
             key: 'menu',
             loader: async () => (await import('./hi/menu.json')).default,
-        },
-        {
-            locale: 'hi',
-            key: 'error',
-            loader: async () => (await import('./hi/error.json')).default,
         },
         {
           locale: 'hi',
@@ -88,11 +78,6 @@ const config = {
             locale: 'bn',
             key: 'menu',
             loader: async () => (await import('./bn/menu.json')).default,
-        },
-        {
-            locale: 'bn',
-            key: 'error',
-            loader: async () => (await import('./bn/error.json')).default,
         },
         {
             locale: 'bn',
@@ -138,6 +123,6 @@ loading.subscribe(async ($loading) => {
 
         await loading.toPromise();
         console.log('Updated translations', translations.get());
-        console.log('----', translations);
+        console.log(translations);
     }
 });

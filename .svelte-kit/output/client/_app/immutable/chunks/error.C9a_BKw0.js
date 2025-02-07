@@ -1,1 +1,0 @@
-const e="ERROR",o="This page does not exist. Please click on the Navigation bar to return to the home page.",t={404:"Page not found.",message:e,general:o};export{t as default,o as general,e as message};

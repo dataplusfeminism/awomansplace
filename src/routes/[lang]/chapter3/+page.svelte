@@ -7,6 +7,7 @@
 	createAccordionContext();
 
 	import { t, locale, locales } from "$lib/translations";
+	import { base } from "$app/paths";
 </script>
 
 <svelte:head>
@@ -455,7 +456,7 @@
 
 		<div class="flex justify-between py-8">
 			<div class="chapter-link">
-				<a href={`../${$locale}/chapter2`}
+				<a href={`${base}/${$locale}/chapter2`}
 					>{@html $t("chapter3.go_back")}
 					<span class="pink font-bold"
 						>{@html $t("chapter3.back_chapter")}</span
@@ -463,7 +464,7 @@
 				</a>
 			</div>
 			<div class="chapter-link">
-				<a href={`../${$locale}/method`}>
+				<a href={`${base}/${$locale}/method`}>
 					<span class="pink font-bold">
 						{@html $t("chapter3.to_chapter")}
 					</span>{@html $t("chapter3.go_to")}
