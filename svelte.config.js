@@ -23,10 +23,10 @@ const config = {
     },
     // Optional base path configuration if deployed on GitHub Pages (sub-path)
     paths: {
-      base: base // Update this if needed, e.g. '/my-project'
+      base: '', // Update this if needed, e.g. '/my-project',
     },
-    trailingSlash: 'always', // Ensures URLs are consistent
-    appDir: 'internal' // Fixes CSS issues
+    //trailingSlash: 'always', // Ensures URLs are consistent
+    //appDir: 'internal' // Fixes CSS issues
   },
 };
 

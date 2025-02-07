@@ -7,8 +7,8 @@
     "package": "svelte-kit package",
     "preview": "vite preview",
     "prepare": "svelte-kit sync",
+    "predeploy": "gh-pages -d build",
     "deploy": "npm run build && gh-pages -d build && touch build/.nojekyll && git add build/.nojekyll && git commit -m 'Adding .nojekyll to disable Jekyll' && git push origin gh-pages"
-  
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "^3.0.0",
@@ -17,6 +17,7 @@
     "@sveltejs/kit": "^2.0.1",
     "@sveltejs/vite-plugin-svelte": "^3.0.0",
     "autoprefixer": "^10.4.19",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.4.39",
     "svelte": "^4.2.7",
     "svelte-check": "^3.6.0",
@@ -27,7 +28,6 @@
   },
   "type": "module",
   "dependencies": {
-    "gh-pages": "^6.3.0",
     "sveltekit-i18n": "^2.4.2"
   }
 }
