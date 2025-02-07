@@ -1,0 +1,1 @@
+const t="A woman's place is in a safe city",n="A woman's place",e="eng",s="ben",o="hi",i={title:t,shorttitle:n,eng:e,bn:s,hi:o};export{s as bn,i as default,e as eng,o as hi,n as shorttitle,t as title};
