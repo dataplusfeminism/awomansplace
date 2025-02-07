@@ -21,7 +21,7 @@ const config = {
         '/bn', '/bn/about', '/bn/chapter2', '/bn/chapter3', '/bn/method',
         // Add other language variations here
       ],
-      handleHttpError: 'warn' // Prevents 404 errors from stopping the build
+      //handleHttpError: 'warn' // Prevents 404 errors from stopping the build
     },
     // Optional base path configuration if deployed on GitHub Pages (sub-path)
     paths: {
@@ -29,7 +29,7 @@ const config = {
       //base: process.env.NODE_ENV === "production" ? "/womans-place-city" : "", // Update this if needed, e.g. '/my-project',
       // base:process.argv.includes('dev') ? '' : "/womans-place-city"
     },
-    // appDir: 'internal',
+    appDir: 'internal',
     // paths: {
 		// 	base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
 		// }

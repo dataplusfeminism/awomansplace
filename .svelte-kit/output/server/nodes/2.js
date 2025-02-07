@@ -3,6 +3,6 @@
 export const index = 2;
 let component_cache;
 export const component = async () => component_cache ??= (await import('../entries/pages/_lang_/_layout.svelte.js')).default;
-export const imports = ["_app/immutable/nodes/2.zTK6XOm4.js","_app/immutable/chunks/scheduler.6wlBD6-3.js","_app/immutable/chunks/index.CV5-XYyW.js","_app/immutable/chunks/index.fePlL5w3.js","_app/immutable/chunks/index.Cmv0BlU7.js","_app/immutable/chunks/stores.CQsUUPPJ.js","_app/immutable/chunks/entry.DSEr_0Kz.js","_app/immutable/chunks/paths.BRmYW4ku.js"];
-export const stylesheets = ["_app/immutable/assets/2.Dvu7-KND.css"];
+export const imports = ["internal/immutable/nodes/2.CwKKFznD.js","internal/immutable/chunks/scheduler.6wlBD6-3.js","internal/immutable/chunks/index.CV5-XYyW.js","internal/immutable/chunks/index.fePlL5w3.js","internal/immutable/chunks/index.Cmv0BlU7.js","internal/immutable/chunks/stores.CG9cprOI.js","internal/immutable/chunks/entry.Bh2Hz-pf.js","internal/immutable/chunks/paths.C1aPpMP-.js"];
+export const stylesheets = ["internal/immutable/assets/2.Dvu7-KND.css"];
 export const fonts = [];

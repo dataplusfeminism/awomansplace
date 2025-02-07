@@ -250,7 +250,7 @@
       "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout.Cb4u-l2L.css"
+      "internal/immutable/assets/_layout.Cb4u-l2L.css"
     ]
   },
   "src/routes/[lang]/+page.svelte": {
@@ -265,7 +265,7 @@
       "_paths.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.B-opn6B9.css"
+      "internal/immutable/assets/_page.B-opn6B9.css"
     ]
   },
   "src/routes/[lang]/about/+page.svelte": {
@@ -291,7 +291,7 @@
       "_paths.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.DmicMAaR.css"
+      "internal/immutable/assets/_page.DmicMAaR.css"
     ]
   },
   "src/routes/[lang]/chapter3/+page.svelte": {
@@ -307,7 +307,7 @@
       "_paths.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.DZImpaSH.css"
+      "internal/immutable/assets/_page.DZImpaSH.css"
     ]
   },
   "src/routes/[lang]/method/+page.svelte": {
@@ -322,7 +322,7 @@
       "_paths.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.b61STXoe.css"
+      "internal/immutable/assets/_page.b61STXoe.css"
     ]
   }
 }
