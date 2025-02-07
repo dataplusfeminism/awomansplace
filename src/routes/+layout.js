@@ -12,3 +12,4 @@ export const load = async ({ data }) => {
 
   return i18n;
 };
+export const prerender = true
