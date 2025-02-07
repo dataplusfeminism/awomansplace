@@ -25,7 +25,7 @@ const config = {
     },
     // Optional base path configuration if deployed on GitHub Pages (sub-path)
     paths: {
-      base: "",
+      base: dev ? '' : process.env.BASE_PATH,
       //base: process.env.NODE_ENV === "production" ? "/womans-place-city" : "", // Update this if needed, e.g. '/my-project',
       // base:process.argv.includes('dev') ? '' : "/womans-place-city"
     },
