@@ -1,6 +1,6 @@
 /* eslint-disable */
 import adapter from '@sveltejs/adapter-static';
-// import { vitePreprocess } from '@sveltejs/kit/vite';
+//import { vitePreprocess } from '@sveltejs/kit/vite';
 
 /** @type {import('@sveltejs/kit').Config} */
 
@@ -25,7 +25,9 @@ const config = {
     },
     // Optional base path configuration if deployed on GitHub Pages (sub-path)
     paths: {
-      base: process.env.NODE_ENV === "production" ? "/womans-place-city" : "", // Update this if needed, e.g. '/my-project',
+      base: "",
+      //base: process.env.NODE_ENV === "production" ? "/womans-place-city" : "", // Update this if needed, e.g. '/my-project',
+      // base:process.argv.includes('dev') ? '' : "/womans-place-city"
     },
     // appDir: 'internal',
     // paths: {

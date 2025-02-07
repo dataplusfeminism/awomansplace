@@ -29,8 +29,26 @@
     "name": "index",
     "imports": [
       "_index2.js",
-      "_utils.js",
-      "_paths.js"
+      "_utils.js"
+    ],
+    "dynamicImports": [
+      "src/lib/translations/en/menu.json",
+      "src/lib/translations/en/home.json",
+      "src/lib/translations/en/chapter2.json",
+      "src/lib/translations/en/chapter3.json",
+      "src/lib/translations/en/method.json",
+      "src/lib/translations/hi/menu.json",
+      "src/lib/translations/hi/home.json",
+      "src/lib/translations/hi/method.json",
+      "src/lib/translations/hi/chapter2.json",
+      "src/lib/translations/hi/chapter3.json",
+      "src/lib/translations/hi/method.json",
+      "src/lib/translations/bn/menu.json",
+      "src/lib/translations/bn/home.json",
+      "src/lib/translations/bn/method.json",
+      "src/lib/translations/bn/chapter2.json",
+      "src/lib/translations/bn/chapter3.json",
+      "src/lib/translations/bn/method.json"
     ]
   },
   "_internal.js": {
@@ -100,6 +118,96 @@
       "_index.js"
     ]
   },
+  "src/lib/translations/bn/chapter2.json": {
+    "file": "chunks/chapter23.js",
+    "name": "chapter2",
+    "src": "src/lib/translations/bn/chapter2.json",
+    "isDynamicEntry": true
+  },
+  "src/lib/translations/bn/chapter3.json": {
+    "file": "chunks/chapter33.js",
+    "name": "chapter3",
+    "src": "src/lib/translations/bn/chapter3.json",
+    "isDynamicEntry": true
+  },
+  "src/lib/translations/bn/home.json": {
+    "file": "chunks/home3.js",
+    "name": "home",
+    "src": "src/lib/translations/bn/home.json",
+    "isDynamicEntry": true
+  },
+  "src/lib/translations/bn/menu.json": {
+    "file": "chunks/menu3.js",
+    "name": "menu",
+    "src": "src/lib/translations/bn/menu.json",
+    "isDynamicEntry": true
+  },
+  "src/lib/translations/bn/method.json": {
+    "file": "chunks/method3.js",
+    "name": "method",
+    "src": "src/lib/translations/bn/method.json",
+    "isDynamicEntry": true
+  },
+  "src/lib/translations/en/chapter2.json": {
+    "file": "chunks/chapter2.js",
+    "name": "chapter2",
+    "src": "src/lib/translations/en/chapter2.json",
+    "isDynamicEntry": true
+  },
+  "src/lib/translations/en/chapter3.json": {
+    "file": "chunks/chapter3.js",
+    "name": "chapter3",
+    "src": "src/lib/translations/en/chapter3.json",
+    "isDynamicEntry": true
+  },
+  "src/lib/translations/en/home.json": {
+    "file": "chunks/home.js",
+    "name": "home",
+    "src": "src/lib/translations/en/home.json",
+    "isDynamicEntry": true
+  },
+  "src/lib/translations/en/menu.json": {
+    "file": "chunks/menu.js",
+    "name": "menu",
+    "src": "src/lib/translations/en/menu.json",
+    "isDynamicEntry": true
+  },
+  "src/lib/translations/en/method.json": {
+    "file": "chunks/method.js",
+    "name": "method",
+    "src": "src/lib/translations/en/method.json",
+    "isDynamicEntry": true
+  },
+  "src/lib/translations/hi/chapter2.json": {
+    "file": "chunks/chapter22.js",
+    "name": "chapter2",
+    "src": "src/lib/translations/hi/chapter2.json",
+    "isDynamicEntry": true
+  },
+  "src/lib/translations/hi/chapter3.json": {
+    "file": "chunks/chapter32.js",
+    "name": "chapter3",
+    "src": "src/lib/translations/hi/chapter3.json",
+    "isDynamicEntry": true
+  },
+  "src/lib/translations/hi/home.json": {
+    "file": "chunks/home2.js",
+    "name": "home",
+    "src": "src/lib/translations/hi/home.json",
+    "isDynamicEntry": true
+  },
+  "src/lib/translations/hi/menu.json": {
+    "file": "chunks/menu2.js",
+    "name": "menu",
+    "src": "src/lib/translations/hi/menu.json",
+    "isDynamicEntry": true
+  },
+  "src/lib/translations/hi/method.json": {
+    "file": "chunks/method2.js",
+    "name": "method",
+    "src": "src/lib/translations/hi/method.json",
+    "isDynamicEntry": true
+  },
   "src/routes/+error.svelte": {
     "file": "entries/pages/_error.svelte.js",
     "name": "entries/pages/_error.svelte",
@@ -157,7 +265,7 @@
       "_paths.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.C8noDNrA.css"
+      "_app/immutable/assets/_page.B-opn6B9.css"
     ]
   },
   "src/routes/[lang]/about/+page.svelte": {
@@ -199,7 +307,7 @@
       "_paths.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.57XupJb0.css"
+      "_app/immutable/assets/_page.DZImpaSH.css"
     ]
   },
   "src/routes/[lang]/method/+page.svelte": {

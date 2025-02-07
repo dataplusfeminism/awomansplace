@@ -1,4 +1,4 @@
-let base = "/womans-place-city";
+let base = "";
 let assets = base;
 const initial = { base, assets };
 function override(paths) {
