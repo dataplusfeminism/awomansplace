@@ -2,6 +2,10 @@
 import adapter from '@sveltejs/adapter-static';
 
 /** @type {import('@sveltejs/kit').Config} */
+
+const dev = process.argv.includes('dev');
+const base = dev ? '' : '/womans-place-city'; // GitHub Pages repo name
+
 const config = {
   kit: {
     adapter: adapter({
@@ -19,11 +23,10 @@ const config = {
     },
     // Optional base path configuration if deployed on GitHub Pages (sub-path)
     paths: {
-      base: '' // Update this if needed, e.g. '/my-project'
-    }
-    // paths: {
-		// 	base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
-		// }
+      base: base // Update this if needed, e.g. '/my-project'
+    },
+    trailingSlash: 'always', // Ensures URLs are consistent
+    appDir: 'internal' // Fixes CSS issues
   },
 };
 

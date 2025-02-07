@@ -1,12 +1,14 @@
 {
-  "name": "locale-router",
+  "name": "womans-place-city",
   "version": "0.0.1",
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
     "package": "svelte-kit package",
     "preview": "vite preview",
-    "prepare": "svelte-kit sync"
+    "prepare": "svelte-kit sync",
+    "deploy": "npm run build && gh-pages -d build && touch build/.nojekyll && git add build/.nojekyll && git commit -m 'Adding .nojekyll to disable Jekyll' && git push origin gh-pages"
+  
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "^3.0.0",
@@ -25,6 +27,7 @@
   },
   "type": "module",
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "sveltekit-i18n": "^2.4.2"
   }
 }
