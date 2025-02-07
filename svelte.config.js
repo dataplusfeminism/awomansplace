@@ -19,15 +19,15 @@ const config = {
 			// This works when all locales are prefixed
 			// entries: ['/'].concat(supportedLocales.reduce((acc, locale) => [...acc, `/${locale}`], ['*']))
 			entries: [
-        '*', '/', 
-        '/en', "/en/method", "/en/chapter2", "/en/chapter3",
-        "/hi", "/hi/method", "/hi/chapter2", "/hi/chapter3",
-        "/bn", "/bn/method", "/bn/chapter2", "/bn/chapter3"], // throws error below (hr default locale, en secondary locale)
+        '*', '/awomansplace', 
+        '/awomansplace/en', "/awomansplace/en/method", "/awomansplace/en/chapter2", "/awomansplace/en/chapter3",
+        "/awomansplace/hi", "/awomansplace/hi/method", "/awomansplace/hi/chapter2", "/awomansplace/hi/chapter3",
+        "awomansplace//bn", "/awomansplace/bn/method", "/awomansplace/bn/chapter2", "/awomansplace/bn/chapter3"], // throws error below (hr default locale, en secondary locale)
 			// entries: ['*', '/en'] // generates only files for english locale, and nothing for default
       handleHttpError: "warn"
 		},
     paths: {
-      base: process.env.NODE_ENV === 'production' ? '' : '' // GITHUB PAGES
+      base: process.env.NODE_ENV === 'production' ? '/awomansplace' : '' // GITHUB PAGES
     },
   },
 };
