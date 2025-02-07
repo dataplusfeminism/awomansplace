@@ -5,7 +5,7 @@ import adapter from '@sveltejs/adapter-static';
 /** @type {import('@sveltejs/kit').Config} */
 
 const dev = process.argv.includes('dev');
-const base = dev ? '' : '/womans-place-city'; // Change 'my-website' to your actual repo name
+const base = dev ? '' : '/awomansplace'; // Change 'my-website' to your actual repo name
 
 const config = {
   kit: {
@@ -25,7 +25,7 @@ const config = {
     },
     // Optional base path configuration if deployed on GitHub Pages (sub-path)
     paths: {
-      base: dev ? '' : '/womans-place-city',
+      base: dev ? '' : process.env.BASE_PATH,
       //base: process.env.NODE_ENV === "production" ? "/womans-place-city" : "", // Update this if needed, e.g. '/my-project',
       // base:process.argv.includes('dev') ? '' : "/womans-place-city"
     },
