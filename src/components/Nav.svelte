@@ -2,6 +2,8 @@
   import { t, locale, locales } from "$lib/translations";
   import { page } from '$app/stores';
   import { goto } from '$app/navigation';
+  import { base } from "$app/paths";
+
   export let segment;
   const links = [
     { name: "ENG", href: "." },
@@ -39,7 +41,7 @@
         alt="Project Logo"
       />
     </a>
-    <a href={`../${$locale}`} class="name py-2">
+    <a href={`${base}/${$locale}`} class="name py-2">
       {$t("menu.shorttitle")}
     </a>
   </div>
@@ -50,7 +52,7 @@
     ring-pink-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 sm:leading-6"
   >
     {#each $locales as lc}
-      <option value="/{lc}{route}" selected="{lc === $locale}">{$t(`lang.${lc}`)}</option>
+      <option value="${base}/{lc}{route}" selected="{lc === $locale}">{$t(`lang.${lc}`)}</option>
     {/each}
   </select>
 </nav>

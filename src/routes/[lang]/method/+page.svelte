@@ -76,9 +76,9 @@
             </p>
 
             <div class="flex flex-wrap items-center gap-x-8">
-                <img class="w-auto h-48 my-10" src="/logos/logo-lcau.png" />
-                <img class="w-auto h-48 my-10" src="/logos/logo-duspmit.png" />
-                <img class="w-auto h-48 my-10" src="/logos/logo-df-pink.png" />
+                <img class="w-auto h-48 my-10" src="${base}/logos/logo-lcau.png" />
+                <img class="w-auto h-48 my-10" src="${base}/logos/logo-duspmit.png" />
+                <img class="w-auto h-48 my-10" src="${base}/logos/logo-df-pink.png" />
             </div>
         </div>
 
